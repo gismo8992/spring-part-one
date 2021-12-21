@@ -26,7 +26,7 @@ public class ProductServlet extends HttpServlet {
         PrintWriter wr = resp.getWriter();
         if (req.getParameter("id") != null) {
             String[] nums = req.getParameterValues("id"); // собираем в массив все id
-            for (String num: nums) { // с помощью foreach выводим id из массива
+            for (String num: nums) { // выводим все id из массива
                 wr.println("<tr>product: " + num + "; <tr>");
             }
 
