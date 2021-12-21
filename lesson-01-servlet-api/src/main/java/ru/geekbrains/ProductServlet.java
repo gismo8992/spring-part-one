@@ -25,8 +25,8 @@ public class ProductServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter wr = resp.getWriter();
         if (req.getParameter("id") != null) {
-            String[] nums = req.getParameterValues("id"); // собираем в массив все id
-            for (String num: nums) { // выводим все id из массива
+            String[] nums = req.getParameterValues("id"); // собираем в массив все id.
+            for (String num: nums) { // выводим все id из массива.
                 wr.println("<tr>product: " + num + "; <tr>");
             }
 
